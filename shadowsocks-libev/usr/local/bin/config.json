@@ -1,9 +1,12 @@
 {
     "server":["::1", "0.0.0.0"],
     "mode":"tcp_and_udp",
-    "server_port":8388,
+    "server_port":8389,
     "local_port":1080,
     "password":"barfoo!",
     "timeout":86400,
-    "method":"chacha20-ietf-poly1305"
+    "method":"aes-128-gcm",
+    "fast_open": false,
+    "plugin": "../plugin/v2ray-plugin_linux_amd64_v1.3.2",
+    "plugin_opts": "server;path=/ws;host=abc.com;mux=0"
 }
